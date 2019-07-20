@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net11.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Oak.Tests</RootNamespace>
+        <PackageId>Oak.Tests</PackageId>
+        <Version>0.0.0</Version>
+        <Authors>Nyar Team - Oak Group</Authors>
+        <Description>Oak 文本解析基础设施测试工具包</Description>
+        <PackageTags>test;utils;oak</PackageTags>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="xunit" Version="2.9.*"/>
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\projects\Oak\Oak.csproj"/>
+    </ItemGroup>
+</Project>

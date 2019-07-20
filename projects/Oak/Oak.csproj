@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+    <RootNamespace>Oak</RootNamespace>
+    <AssemblyName>Oak.Core</AssemblyName>
+    <PackageId>Oak</PackageId>
+    <Version>0.0.0</Version>
+    <Authors>Nyar Team - Oak Group</Authors>
+    <Description>Oak 文本解析基础设施核心包，提供通用解析器接口与工具</Description>
+    <PackageProjectUrl>https://github.com/nyar-vm/Oak.cs</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/nyar-vm/Oak.cs</RepositoryUrl>
+    <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
+    <PackageTags>parser;lexer;text;oak</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Oak.Core.Tests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Oak.GGScript" />
+  </ItemGroup>
+
+</Project>

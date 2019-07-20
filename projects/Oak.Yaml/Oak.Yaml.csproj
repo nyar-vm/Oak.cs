@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net11.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>preview</LangVersion>
+        <RootNamespace>Oak.Yaml</RootNamespace>
+        <AssemblyName>Oak.Yaml</AssemblyName>
+        <PackageId>Oak.Yaml</PackageId>
+        <Version>0.0.0</Version>
+        <Authors>Nyar Team - Oak Group</Authors>
+        <Description>Oak YAML 解析器</Description>
+        <PackageProjectUrl>https://github.com/nyar-vm/Oak.cs</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/nyar-vm/Oak.cs</RepositoryUrl>
+        <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
+        <PackageTags>parser;yaml;oak</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Oak\Oak.csproj"/>
+    </ItemGroup>
+
+</Project>

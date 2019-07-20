@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net11.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>preview</LangVersion>
+        <RootNamespace>Oak</RootNamespace>
+        <AssemblyName>Nyar.Vendor.Oak</AssemblyName>
+        <PackageId>Nyar.Vendor.Oak</PackageId>
+        <Version>0.0.0</Version>
+        <Authors>Nyar Team</Authors>
+        <Description>Oak 文本解析平台完整包 - 提供所有 Oak 解析器的完整集合</Description>
+        <PackageProjectUrl>https://github.com/nyar-vm/Oak.cs</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/nyar-vm/Oak.cs</RepositoryUrl>
+        <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
+        <PackageTags>parser;lexer;text;markdown;oak</PackageTags>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <IncludeBuildOutput>true</IncludeBuildOutput>
+        <IncludeSymbols>false</IncludeSymbols>
+        <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\projects\Oak\Oak.csproj"/>
+        <ProjectReference Include="..\..\projects\Oak.Von\Oak.Von.csproj"/>
+        <ProjectReference Include="..\..\projects\Oak.Valkyrie\Oak.Valkyrie.csproj"/>
+        <ProjectReference Include="..\..\projects\Oak.Scss\Oak.Scss.csproj"/>
+        <ProjectReference Include="..\..\projects\Oak.Markdown\Oak.Markdown.csproj"/>
+        <ProjectReference Include="..\..\projects\Oak.C\Oak.C.csproj"/>
+        <ProjectReference Include="..\..\projects\Oak.Verse\Verse.csproj"/>
+        <ProjectReference Include="..\..\projects\Oak.Obj\Oak.Obj.csproj"/>
+        <ProjectReference Include="..\..\projects\Oak.Csv\Oak.Csv.csproj"/>
+        <ProjectReference Include="..\..\projects\Oak.Ktx\Oak.Ktx.csproj"/>
+        <ProjectReference Include="..\..\projects\Oak.Xml\Oak.Xml.csproj"/>
+        <ProjectReference Include="..\..\projects\Oak.Yaml\Oak.Yaml.csproj"/>
+        <ProjectReference Include="..\..\projects\Oak.Json\Oak.Json.csproj"/>
+        <ProjectReference Include="..\..\projects\Oak.JavaScript\Oak.JavaScript.csproj"/>
+        <ProjectReference Include="..\..\projects\Oak.Python\Oak.Python.csproj"/>
+        <ProjectReference Include="..\..\projects\Oak.SpineAtlas\Oak.SpineAtlas.csproj"/>
+        <ProjectReference Include="..\..\projects\Oak.Typescript\Oak.Typescript.csproj"/>
+    </ItemGroup>
+
+    <Target Name="IncludeProjectReferenceDllsInPackage" BeforeTargets="_GetPackageFiles">
+        <ItemGroup>
+            <_ProjectReferenceDlls Include="$(OutputPath)\*.dll" Exclude="$(OutputPath)\$(AssemblyName).dll"/>
+            <_PackageFiles Include="@(_ProjectReferenceDlls)">
+                <PackagePath>lib\$(TargetFramework)</PackagePath>
+                <Visible>false</Visible>
+                <BuildAction>None</BuildAction>
+            </_PackageFiles>
+        </ItemGroup>
+    </Target>
+
+</Project>

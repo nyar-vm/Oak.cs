@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.*" />
+    <PackageReference Include="xunit" Version="2.9.*" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Oak.Testing\Oak.Testing.csproj" />
+    <ProjectReference Include="..\..\projects\Oak.Glsl\Oak.Glsl.csproj" />
+    <ProjectReference Include="..\..\projects\Oak.Hlsl\Oak.Hlsl.csproj" />
+    <ProjectReference Include="..\..\projects\Oak.Scss\Oak.Scss.csproj" />
+    <ProjectReference Include="..\..\projects\Oak.Wat\Oak.Wat.csproj" />
+    <ProjectReference Include="..\..\projects\Oak.Jasmin\Oak.Jasmin.csproj" />
+    <ProjectReference Include="..\..\projects\Oak.Javap\Oak.Javap.csproj" />
+    <ProjectReference Include="..\..\projects\Oak.Msil\Oak.Msil.csproj" />
+  </ItemGroup>
+</Project>

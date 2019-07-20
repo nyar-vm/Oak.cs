@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net11.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>preview</LangVersion>
+        <RootNamespace>Oak.Valkyrie</RootNamespace>
+        <AssemblyName>Oak.Valkyrie</AssemblyName>
+        <Version>0.0.0.0</Version>
+        <Authors>Oak Team</Authors>
+        <Description>Valkyrie 语言 AST 定义以及 Parser</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Oak\Oak.csproj"/>
+    </ItemGroup>
+</Project>

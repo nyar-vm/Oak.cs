@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+    <RootNamespace>Oak.Sql</RootNamespace>
+    <AssemblyName>Oak.Sql</AssemblyName>
+    <PackageId>Oak.Sql</PackageId>
+    <Version>0.0.0</Version>
+    <Authors>Nyar Team - Oak Group</Authors>
+    <Description>Oak SQL 文本编解码</Description>
+    <PackageProjectUrl>https://github.com/nyar-vm/Oak.cs</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/nyar-vm/Oak.cs</RepositoryUrl>
+    <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
+    <PackageTags>parser;sql;oak</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Oak\Oak.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Syntax\SqlSyntaxHighlighter.cs" />
+  </ItemGroup>
+</Project>

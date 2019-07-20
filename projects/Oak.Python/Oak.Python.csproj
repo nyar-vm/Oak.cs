@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net11.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>preview</LangVersion>
+        <RootNamespace>Oak.Python</RootNamespace>
+        <AssemblyName>Oak.Python</AssemblyName>
+        <PackageId>Oak.Python</PackageId>
+        <Version>0.0.0</Version>
+        <Authors>Nyar Team - Oak Group</Authors>
+        <Description>Oak Python 语言前端解析器，提供完整的 Python 词法分析和语法分析</Description>
+        <PackageProjectUrl>https://github.com/nyar-vm/Oak.cs</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/nyar-vm/Oak.cs</RepositoryUrl>
+        <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
+        <PackageTags>parser;python;lexer;oak</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Oak\Oak.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.*" />
+        <PackageReference Include="xunit" Version="2.9.*" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.8.*" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net11.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>preview</LangVersion>
+        <RootNamespace>Oak.Wit</RootNamespace>
+        <AssemblyName>Oak.Wit</AssemblyName>
+        <PackageId>Oak.Wit</PackageId>
+        <Version>0.0.0</Version>
+        <Authors>Nyar Team - Oak Group</Authors>
+        <Description>Oak WIT 文本语言前端，提供 WASM Component Model 接口定义语言的词法分析、语法分析和格式化</Description>
+        <PackageProjectUrl>https://github.com/nyar-vm/Oak.cs</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/nyar-vm/Oak.cs</RepositoryUrl>
+        <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
+        <PackageTags>parser;wit;lexer;oak;wasm;component-model;interface-types</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Oak\Oak.csproj"/>
+    </ItemGroup>
+
+</Project>

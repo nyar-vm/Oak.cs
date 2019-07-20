@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net11.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>preview</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Oak.DejaVu.csproj"/>
+        <ProjectReference Include="..\..\Oak.Tests\Oak.Tests.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="xunit" Version="2.9.*"/>
+        <PackageReference Include="xunit.abstractions" Version="2.0.3"/>
+    </ItemGroup>
+
+</Project>
